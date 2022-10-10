@@ -15,4 +15,15 @@
   .mb-4{
     padding-left: 500px;
   }
- 
+ .immagine2{
+  max-height: 500px;
+ }
+ .Nome {
+  background-color: aquamarine;
+ }
+ .professioni {
+background-color: blueviolet;
+ }
+ .contatti{
+  background-color: orange;
+ }

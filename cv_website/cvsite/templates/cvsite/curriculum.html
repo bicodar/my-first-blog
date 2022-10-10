@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static%}
+  <link rel="stylesheet" href="{% static 'cvsite/style.css' %}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +32,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'contatti' %}">Curriculum</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'contatti' %}">Contatti</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,5 +58,24 @@
           </div>
         </div>
       </nav>
+      <div class="immagine2">
+      {% load static %}
+      <img src="{% static 'cvsite/screen-2.webp' %}"  class="img-fluid imaginerounded float-end immagine2 " alt="..."  />
+    </div>
+   <div class="Nome">
+    <h1>Monkey .D. Rufy</h1>
+    <p>Professione: Guru del web</p>
+  </div>
+  <div class="professioni">
+    <h2>Esperienze lavorative passate</h2>
+    <p>Calzolaio</p>
+    <p>stipendio molto basso</p>
+    <br>
+    <p>Macellaio</p>
+    <p>Salameeeeeee</p>
+  </div>
+  <div class="contatti">
+    email
+  </div>
 </body>
 </html>
