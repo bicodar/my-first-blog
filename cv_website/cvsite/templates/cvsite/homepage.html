@@ -94,14 +94,12 @@
       </div>
     
     </div>
-    <div>
+    <div style="display: flex ; flex-wrap: wrap">
       {% for cvelement in cvelements%}
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Zoro</h5>
-          <p class="card-text">1.2.3.100 passi.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">{{ cvelement.nome }}</h5>
+          <a class="btn" href="{% url 'detail' cvelement.id %}">esplora</a>
         </div>
       </div>
       {% endfor %}

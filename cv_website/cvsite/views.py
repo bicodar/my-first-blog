@@ -35,7 +35,8 @@ from django.http import Http404
 
 def detail(request, cvelement_id):
     try:
-        print('cv element id: %s' % cvelement_id)
+        element = cvelement.objects.get(pk=cvelement_id)
+
     except cvelement.DoesNotExist:
         raise Http404("CV element does not exist")
-    return render(request, 'portfolio/detail.html', {'element': cvelement_id})
+    return render(request, 'cvsite/detail.html', {'element': element})
